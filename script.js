@@ -225,7 +225,7 @@ async function initQuiz() {
 
     answerBtns.forEach((btn, i) => {
       btn.textContent = q.options[i];
-      btn.classList.remove("correct", "wrong");
+      btn.classList.remove("correct", "wrong", "hint-eliminated");
     });
 
     toggleAnswerButtons(false);

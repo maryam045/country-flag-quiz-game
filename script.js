@@ -305,24 +305,7 @@ async function initQuiz() {
     nextBtn.disabled = false;
   }
 
-  hintBtn.addEventListener("click", () => {
-    if (answered) return;
-
-    const q = quiz[currentIndex];
-
-    const eliminable = answerBtns.filter(
-      (btn) => btn.textContent !== q.answer && !btn.disabled
-    );
-
-    shuffle(eliminable)
-      .slice(0, 2)
-      .forEach((btn) => {
-        btn.disabled = true;
-      });
-
-    hintBtn.disabled = true;
-  });
-
+  
   nextBtn.addEventListener("click", () => {
     currentIndex++;
 

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+             <title>FLAG QUIZ</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icons/futminna.png">
+    </head>
+    <body data-page="quiz">
+        <div class="quiz-container">
+    <h1 id="quizh1"> <img src="icons/globe-64x64.png" > Country Flag Quiz</h1>
+            <div class="top-bar">
+                <p>Score: <span id="score">0</span></p>
+                <div class="timer">
+                   Time: <span id="timer">30s</span>
+                </div>
+            </div>
+            <p id="quiz-status"></p>
+            <div class="flag-section">
+                <img id="quiz-flag" src="" alt="Country Flag">
+                <h2>Which country flag is this?</h2>
+            </div>
+
+            <div class="answers">
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+            </div>
+
+            <div class="controls">
+                <button class="Hint-btn" id="hint-btn">HINT</button>
+                <button class="next-btn" id="next-btn">NEXT</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
